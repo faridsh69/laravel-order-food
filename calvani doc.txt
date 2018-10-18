@@ -1,0 +1,92 @@
+1 database :
+	-user:
+		first_name*, last_name*, phone*, password*, email, city-address, sabet ya mobile 2vom 
+
+	+ retorans:
+		name,user_id,city_id,address,phone,time,off,minimum_price,peyk_in,peyk_out
+
+	+ cities :
+		name (babol - amol - sari)
+		
+	+ food_types :
+		name (kabab - pitza - berger - joje - mahi - sokhari - khoresht - mahali - sonnati - jigaraki )
+
+	+ retoran_types:
+		retoran_id , food_type_id
+
+	+ foods:
+		returan_id, name, mohtaviat, price, ready,
+
+	+ food_type:
+		foot_id,type_id
+
+	+ order:
+		user_id, address, price, state
+
+	+ order_foods:
+		order_id, food_id, number
+
+	payment:
+		order_id,price, shomare factor, user ip, browser,
+	
+	food_rates:
+		food_id , user_id , rate
+	retoran_rates:
+		retoran_id , user_id , rate
+	restoran_image
+	food_image
+	
+	
+2 pages :
+	1homepage :
+		+ mnu o header
+			+ vorod - list restoran ha
+			+ time login boodan binahayaat
+		+ sefareshe online ghaza az restoran hae shomal keshvar
+		+ search bar asas e esme shahr +  mahale + tik bashe vase restoran fast food + bar asae name restoran
+		+ takhfife 
+		+ rahname moshtari ba icon -> mesle zoodfood
+		+ esme shahr o entekhabi konim
+		* message dadan 
+
+	2 restorans page  :
+		+ fastfood restoran ashpaz khone , name restoranam betone search kone rosh
+		+ logo + name restoran + address + rate + tanavoe ghaza ha + takhfif + sefaresh mipazirad + gheimat 
+		+ namayeshe mesle reyhoon + namayeshe ye search riz raje be in ke fast foos mikhad ya restoran ya ... 
+		+ o to che mahale o csharri ham search karde 
+		+ panele sabte restoran 
+		* liste rize restorana on baghal 
+		* mian gheimat 
+		* ghedmate restoran 
+		* tarhe nahaie restoran ha
+		- time o type
+
+	3 menu ghaza ha:
+		+ name ghaza + mohtaviat+ gheimate + axe + gheimate bade takhfif 
+		+ sabade kharid 
+		+ to panel restoran hazine ersal bayad bashe
+		+ hamintor bayad hadeaghal e hazine ham bashe
+		+ kollan ye hazine ersal
+		* search on baghal bashe 
+		- daste bandi ghaza ha
+		hamon pain in chiza bashe: nazare karbaran + etelaate restoran 
+		panele sabte menu ghazaha
+
+	4 sabte nayai
+		+ user name nadarim - faghat telephon ya email
+		moshabehe reyhoon
+		tozih raje be sefaresh 
+		ba telegram o to site o ba sms o email sefaresha mire
+		- first namee laste name phone email address - sabet -  city - code takhfif 
+
+	5 sabte restoran
+		safhash o doros konam
+
+3 options :
+	emkane pardakhte naghdi :
+		baraye mabaleghe zire 40 toman naghdi nis
+		telephone sabet bedan hatman
+		age bare avalet bashe nemitoni begiri naghdi
+	
+
+git remote set-url origin https://faridsh69@gitlab.com/faridsh69/shikfood.git
